@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={nav ? "fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
       >
         <div
           className={
@@ -113,16 +113,16 @@ const Navbar = () => {
                 Lets CONNECT
               </p>
               <div className="flex items-center justify-between mt-10 w-full sm:w-[80%] ">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaLinkedinIn />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaGithub />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaInstagram />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
               </div>
