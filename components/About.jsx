@@ -26,20 +26,20 @@ const About = () => {
             of the industry, and excited to help contribute my skills in
             creating engaging digital experiences.
           </p>
-          <p className="p-2 text-gray-600">Lets check ou some CV =</p>
-          <button href="" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center cursor-pointer">
-            <svg
-              class="fill-current w-4 h-4 mr-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
+          <p className="flex p-2 text-gray-600 xl:ml-[550px] ml-[105px]">
+            Lets check out my CV{" "}
+          </p>
+          <div className="flex items-center justify-between mb-5 xl:mb-[-20px]">
+            <button
+              href=""
+              className="bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-3 ml-[130px] rounded-full cursor-pointer hover:scale-105 ease-in duration-300 xl:ml-[575px]"
             >
-              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-            </svg>
-            <span>Download</span>
-          </button>
+              Download
+            </button>
+          </div>
         </div>
-        <div>
-          <Image src="/../public/assets/hilll.jpeg" width="250" height="60" />
+        <div className="xl:w-auto h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 xl:ml-[530px]">
+          <Image src="/../public/assets/hilll.jpeg" width="200" height="60" />
         </div>
       </div>
     </div>
