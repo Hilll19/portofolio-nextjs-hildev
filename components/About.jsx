@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import hilImg from "@/public/assets/hilll.jpeg"
+import Link from "next/link";
+import myCV from "@/public/assets/CV_Mochamad_Hilmy_Febrian.pdf"
 
 const About = () => {
   return (
@@ -30,16 +33,17 @@ const About = () => {
             Lets check out my CV{" "}
           </p>
           <div className="flex items-center justify-between mb-5 xl:mb-[-20px]">
-            <button
-              href=""
-              className="bg-[#308C8A] hover:bg-[#306b6a] text-white font-bold py-2 px-3 ml-[130px] rounded-full cursor-pointer hover:scale-105 ease-in duration-300 xl:ml-[575px]"
-            >
-              Download
-            </button>
+            <a href={myCV} download>
+              <button
+                className="bg-[#308C8A] hover:bg-[#306b6a] text-white font-bold py-2 px-3 ml-[130px] rounded-full cursor-pointer hover:scale-105 ease-in duration-300 xl:ml-[575px]"
+              >
+                Download
+              </button>
+            </a>
           </div>
         </div>
         <div className="xl:w-auto w-[200px] ml-[94px] h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 xl:ml-[530px]">
-          <Image src="/../public/assets/hilll.jpeg" width="200" height="60" />
+          <Image src={hilImg} width="200" height="60" />
         </div>
       </div>
     </div>
