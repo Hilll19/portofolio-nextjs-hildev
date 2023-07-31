@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -30,22 +30,22 @@ const Navbar = () => {
                 Home
               </li>
             </Link>
-            <Link href="/">
+            <Link href="#about">
               <li className="ml-10 text-sm uppercase font-bold hover:border-b">
                 About
               </li>
             </Link>
-            <Link href="/">
+            <Link href="#skills">
               <li className="ml-10 text-sm uppercase font-bold hover:border-b">
                 Skills
               </li>
             </Link>
-            <Link href="/">
+            <Link href="#projects">
               <li className="ml-10 text-sm uppercase font-bold hover:border-b">
                 Project
               </li>
             </Link>
-            <Link href="/">
+            <Link href="#contact">
               <li className="ml-10 text-sm uppercase font-bold hover:border-b">
                 Contact
               </li>
@@ -58,7 +58,9 @@ const Navbar = () => {
       </div>
 
       <div
-        className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
@@ -95,16 +97,18 @@ const Navbar = () => {
               <Link href="/">
                 <li className="ml-5 py-4 text-sm font-bold">Home</li>
               </Link>
-              <Link href="/">
-                <li className="ml-5 py-4 text-sm font-bold">About</li>
+              <Link href="#about">
+                <li className="ml-5 py-4 text-sm font-bold">
+                  About
+                </li>
               </Link>
-              <Link href="/">
+              <Link href="#skills">
                 <li className="ml-5 py-4 text-sm font-bold">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="#projects">
                 <li className="ml-5 py-4 text-sm font-bold">Project</li>
               </Link>
-              <Link href="/">
+              <Link href="#contact">
                 <li className="ml-5 py-4 text-sm font-bold">Contact</li>
               </Link>
             </ul>
@@ -114,13 +118,19 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between mt-10 w-full sm:w-[80%] ">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <Link href="https://www.linkedin.com/in/moch-hilmy-febrian-eka-cahyadi-17a10521b/">
+                    <FaLinkedin/>
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <Link href="https://github.com/Hilll19">
+                    <FaGithub />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaInstagram />
+                  <Link href="https://www.instagram.com/hlmyfe/">
+                    <FaInstagram />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <AiOutlineMail />
