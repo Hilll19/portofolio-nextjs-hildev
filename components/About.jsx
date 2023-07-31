@@ -10,7 +10,7 @@ const About = () => {
             About
           </p>
           <h2 className="py-3 ml-2">Hello World</h2>
-          <p className="p-2 text-gray-600 ml-2">//Programmer</p>
+          <p className="p-2 text-gray-600 ml-2">Programmer</p>
           <p className="p-2 text-gray-600 ml-2">
             Mochamad Hilmy Febrian 20 years old, a dedicated and enthusiastic
             web developer. Have a solid foundation in HTML, CSS and JavaScript.
