@@ -10,7 +10,7 @@ const Projectitem = ({title, backgroundImg, descriptionText, projectUrl}) => {
         src={backgroundImg}
         alt="/"
         width="1000"
-        height="200"
+        height="300"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-2xl text-white uppercase tracking-widest text-center">
@@ -18,7 +18,7 @@ const Projectitem = ({title, backgroundImg, descriptionText, projectUrl}) => {
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{descriptionText}</p>
         <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+          <p className="text-center mb-2 py-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
             More Info
           </p>
         </Link>

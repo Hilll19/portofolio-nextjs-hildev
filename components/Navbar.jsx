@@ -78,11 +78,11 @@ const Navbar = () => {
                 alt="/"
                 width="200"
                 height="10"
-                className="mr-3"
+                className="mr-2"
               />
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-600 p-2 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-600 p-1 cursor-pointer "
               >
                 <AiOutlineClose />
               </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 <li className="ml-5 py-4 text-sm font-bold">Contact</li>
               </Link>
             </ul>
-            <div className="pt-[55px]">
+            <div className="pt-[30px]">
               <p className="uppercase tracking-widest text-[#5b56ec]">
                 Lets CONNECT
               </p>
