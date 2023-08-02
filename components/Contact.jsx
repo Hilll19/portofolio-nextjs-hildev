@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import contactImg from "@/public/assets/contact.jpg"
+import {HiOutlineChevronDoubleUp} from "react-icons/hi"
 import Link from 'next/link';
 
 const Contact = () => {
@@ -77,9 +78,17 @@ const Contact = () => {
                                     <label className='uppercase text-sm py-2'>Message</label>
                                     <textarea className='border-2 rounded-lg p-3 border-gray-300' rows="9"></textarea>
                                 </div>
+                                <button className='w-full p-4 text-gray-100 mt-3'>Send Message</button>
                             </form>
                         </div>
                     </div>
+                </div>
+                <div className='flex justify-center py-12'>
+                    <Link href="/">
+                        <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <HiOutlineChevronDoubleUp className='text-[#308C8A]' size={25}/>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
