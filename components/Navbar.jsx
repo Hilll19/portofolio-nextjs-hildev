@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -7,6 +7,7 @@ import logoImg from "@/public/assets/logo.png"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   //fot handle to change menu
   const handleNav = () => {
@@ -14,8 +15,20 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  //Create scroll shadow 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.screenY >= 90) {
+        setShadow(true)
+      }else{
+        setShadow(false)
+      }
+    };
+    window.addEventListener('scroll', handleShadow);
+  }, []);
+
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src={logoImg}
@@ -96,21 +109,21 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="ml-5 py-4 text-sm font-bold">Home</li>
+                <li onClick={() => setNav(false)} className="ml-5 py-4 text-sm font-bold">Home</li>
               </Link>
               <Link href="#about">
-                <li className="ml-5 py-4 text-sm font-bold">
+                <li onClick={() => setNav(false)} className="ml-5 py-4 text-sm font-bold">
                   About
                 </li>
               </Link>
               <Link href="#skills">
-                <li className="ml-5 py-4 text-sm font-bold">Skills</li>
+                <li onClick={() => setNav(false)} className="ml-5 py-4 text-sm font-bold">Skills</li>
               </Link>
               <Link href="#projects">
-                <li className="ml-5 py-4 text-sm font-bold">Project</li>
+                <li onClick={() => setNav(false)} className="ml-5 py-4 text-sm font-bold">Project</li>
               </Link>
               <Link href="#contact">
-                <li className="ml-5 py-4 text-sm font-bold">Contact</li>
+                <li onClick={() => setNav(false)} className="ml-5 py-4 text-sm font-bold">Contact</li>
               </Link>
             </ul>
             <div className="pt-[30px]">
