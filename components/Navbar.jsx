@@ -18,7 +18,8 @@ const Navbar = () => {
     if (
       router.asPath === '/Kopiemak' ||
       router.asPath === '/Rembang' ||
-      router.asPath === '/ChatApp'
+      router.asPath === '/ChatApp' ||
+      router.asPath === '/ProjectAll'
     ){
       setNavBg('transparent')
       setLinkColor('#ecf0f3')
