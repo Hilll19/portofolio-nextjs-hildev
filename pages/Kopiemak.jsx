@@ -7,8 +7,8 @@ import Link from 'next/link'
 const Kopiemak = () => {
   return (
     <div className='w-full '>
-      <div className='w-full h-[500px]  relative'>
-        <div className='absolute top-0 left-0 w-full h-[500px] bg-black/70 z-10' />
+      <div className='w-screen lg:w-full h-[60vh] lg:h-[500px] relative'>
+        <div className='absolute top-0 left-0 w-full h-[60vh] lg:h-[500px] bg-black/70 z-10' />
         <Image className='abosulte z-1' layout='fill' objectFit='cover' src={propertyImg} alt='kopiemak' />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[50%] text-white z-10 p-2'>
           <h2>Kopi Emak</h2>

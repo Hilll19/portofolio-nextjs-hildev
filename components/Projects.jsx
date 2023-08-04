@@ -34,7 +34,7 @@ const Projects = () => {
             title="ChatApp Firebase"
             backgroundImg={chatappImg}
             descriptionText="ReactJS Firebase"
-            projectUrl="/Chatapp"
+            projectUrl="/ChatApp"
           />
         </div>
       </div>
