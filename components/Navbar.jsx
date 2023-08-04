@@ -4,10 +4,29 @@ import Image from "next/image";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import logoImg from "@/public/assets/logo.png"
+import { Router, useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [LinkColor, setLinkColor] = useState('#1f2937');
+  const router = useRouter()
+
+  //This to effect when nav on pages declare will change
+  useEffect(() => {
+    if (
+      router.asPath === '/Kopiemak' ||
+      router.asPath === '/Rembang' ||
+      router.asPath === '/ChatApp'
+    ){
+      setNavBg('transparent')
+      setLinkColor('#ecf0f3')
+    }else{
+      setNavBg('#ecf0f3')
+      setLinkColor('#1f2937')
+    }
+  }, [router])
 
   //fot handle to change menu
   const handleNav = () => {
@@ -20,7 +39,7 @@ const Navbar = () => {
     const handleShadow = () => {
       if (window.screenY >= 90) {
         setShadow(true)
-      }else{
+      } else {
         setShadow(false)
       }
     };
@@ -28,7 +47,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+    <div style={{backgroundColor: `${navBg}`}} className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src={logoImg}
@@ -38,7 +57,7 @@ const Navbar = () => {
           className="mr-10 mb-7"
         />
         <div>
-          <ul className="hidden md:flex ">
+          <ul style={{color: `${LinkColor}`}} className="hidden md:flex ">
             <Link href="/">
               <li className="ml-10 text-sm uppercase font-bold hover:border-b">
                 Home
@@ -133,7 +152,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between mt-10 w-full sm:w-[80%] ">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <Link href="https://www.linkedin.com/in/moch-hilmy-febrian-eka-cahyadi-17a10521b/">
-                    <FaLinkedin/>
+                    <FaLinkedin />
                   </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
