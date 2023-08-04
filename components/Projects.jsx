@@ -20,21 +20,21 @@ const Projects = () => {
             title="Kopi Emak"
             backgroundImg={propertyImg}
             descriptionText="HTML CSS JAVASCRIPT Basic"
-            projectUrl="/property"
+            projectUrl="/Kopiemak"
           />
           {/* Rembang */}
           <Projectitem
             title="Rembang"
             backgroundImg={rembangImg}
             descriptionText="HTML CSS JAVASCRIPT Basic"
-            projectUrl="/property"
+            projectUrl="/Rembang"
           />
           {/* ChatApp */}
           <Projectitem
             title="ChatApp Firebase"
             backgroundImg={chatappImg}
             descriptionText="ReactJS Firebase"
-            projectUrl="/property"
+            projectUrl="/Chatapp"
           />
         </div>
       </div>
