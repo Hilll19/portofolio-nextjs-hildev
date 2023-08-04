@@ -12,7 +12,7 @@ const Kopiemak = () => {
         <Image className='abosulte z-1' layout='fill' objectFit='cover' src={propertyImg} alt='kopiemak' />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[50%] text-white z-10 p-2'>
           <h2>Kopi Emak</h2>
-          <h3>HTML / CSS / Javascript</h3>
+          <h3>HTML / CSS </h3>
         </div>
       </div>
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-10'>
@@ -20,10 +20,14 @@ const Kopiemak = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This project Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam dicta est accusamus, eum necessitatibus in pariatur reprehenderit, assumenda ipsam quam consequatur, repellendus laboriosam natus! Rerum maiores veniam dignissimos optio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat, illum aperiam beatae ea cupiditate soluta at voluptas magnam neque ullam, exercitationem iste, dolore deserunt assumenda! Fuga sunt possimus necessitatibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde temporibus in fugit amet voluptatem porro maxime suscipit modi labore voluptates delectus alias magnam, earum repudiandae expedita quam? Nemo, nihil soluta!
+          This is a project where I am trying to learn the basics of HTML, CSS, and JavaScript. Here, I am creating a web interface for Kopi emak with CSS layouting techniques such as display, position, dimensions, overflow, and more. I am striving to apply these fundamental components to the project.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          <Link href="#">
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </Link>
+          <Link href="https://github.com/Hilll19/Kopi-Emak">
           <button className='px-8 py-2 mt-4'>Code</button>
+          </Link>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-3'>
           <div className='p-2'>
@@ -31,11 +35,10 @@ const Kopiemak = () => {
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>HTML</p>
               <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>CSS</p>
-              <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>Javascript</p>
             </div>
           </div>
         </div>
-        <Link href="/#projects">
+        <Link href="/#Projects">
           <p className='flex justify-center py-2 rounded-full shadow-lg shadow-gray-400 p-5 hover:scale-110 ease-in duration-300 cursor-pointer'>Back</p>
         </Link>
       </div>

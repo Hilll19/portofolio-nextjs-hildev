@@ -19,19 +19,24 @@ const ChatApp = () => {
         <div className='col-span-4'>
           <p>Project</p>
           <h2>Overview</h2>
-          <p>
-            This project Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam dicta est accusamus, eum necessitatibus in pariatur reprehenderit, assumenda ipsam quam consequatur, repellendus laboriosam natus! Rerum maiores veniam dignissimos optio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat, illum aperiam beatae ea cupiditate soluta at voluptas magnam neque ullam, exercitationem iste, dolore deserunt assumenda! Fuga sunt possimus necessitatibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde temporibus in fugit amet voluptatem porro maxime suscipit modi labore voluptates delectus alias magnam, earum repudiandae expedita quam? Nemo, nihil soluta!
+          <p className='p-2'>
+            Project ini saya buat dengan frontendnya menggunakan reactjs, css, scss sebagai component membuat UI yang menarik dan dinamis.Untuk bagian backendnya saya mengkoneksikan dengan firebase ( seperti authentication, storage, cloud dll).Pada halaman depan akan ada Register dan Login page untuk membuat akun serta menambahkan gambar profile, untuk informasi akun nantinya akan di simpan di authentication dan untuk gambarnya akan disimpan di storage sesuai id dari authentication tadi.Sehingga jika kita menggunakan id tadi bisa dipanggil di chat profil akun masing-masing.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          <Link href="#">
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </Link>
+          <Link href="https://github.com/Hilll19/chatapp-hildev">
           <button className='px-8 py-2 mt-4'>Code</button>
+          </Link>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-3'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>HTML</p>
+              <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>ReactJS</p>
               <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>CSS</p>
-              <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>Javascript</p>
+              <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>SCSS</p>
+              <p className='text-gray-600 py-6 flex items-center'><RiRadioButtonFill className='pr-1'/>Firebase</p>
             </div>
           </div>
         </div>
