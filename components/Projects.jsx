@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import searchMovieImg from '@/public/assets/projects/searchmoviedb.png'
-import propertyImg from "@/public/assets/projects/kopiemak1.png";
-import rembangImg from "@/public/assets/projects/RembangTour1.png"
+import sekawanmediaIMG from "@/public/assets/projects/pict_sekawanmedia.png"
+import fxmediaIMG from "@/public/assets/projects/pict_FXMEDIA.png"
 import chatappImg from "@/public/assets/projects/ChatAppSs.png"
 import { CgMoreR } from "react-icons/cg"
 import Link from "next/link";
@@ -19,6 +19,20 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Search Movie  */}
           <Projectitem
+            title="Project FXMEDIA"
+            backgroundImg={fxmediaIMG}
+            descriptionText="HTML CSS JS BOOTSTRAP"
+            projectUrl="/projectFXMEDIA"
+          />
+          {/* Rembang */}
+          <Projectitem
+            title="Project Sekawan Media"
+            backgroundImg={sekawanmediaIMG}
+            descriptionText="HTML CSS Javascript JQuery"
+            projectUrl="/projectSEKAWANMEDIA"
+          />
+          {/* Search Movie  */}
+          <Projectitem
             title="Search Movie API"
             backgroundImg={searchMovieImg}
             descriptionText="ReactJS Axios API"
@@ -30,20 +44,6 @@ const Projects = () => {
             backgroundImg={chatappImg}
             descriptionText="ReactJS CSS SCSS Firebase"
             projectUrl="/ChatApp"
-          />
-          {/* KOPI EMAK */}
-          <Projectitem
-            title="Kopi Emak"
-            backgroundImg={propertyImg}
-            descriptionText="HTML CSS Basic"
-            projectUrl="/Kopiemak"
-          />
-          {/* Rembang */}
-          <Projectitem
-            title="Rembang"
-            backgroundImg={rembangImg}
-            descriptionText="HTML CSS Basic"
-            projectUrl="/Rembang"
           />
         </div>
         <div className='flex justify-center py-12'>

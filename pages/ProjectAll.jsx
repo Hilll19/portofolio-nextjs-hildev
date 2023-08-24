@@ -5,6 +5,8 @@ import projectallIMG from '@/public/assets/projects/projectall.png'
 import propertyImg from "@/public/assets/projects/kopiemak1.png";
 import rembangImg from "@/public/assets/projects/RembangTour1.png"
 import chatappImg from "@/public/assets/projects/ChatAppSs.png"
+import fxmediaIMG from "@/public/assets/projects/pict_FXMEDIA.png"
+import sekawanmediaIMG from "@/public/assets/projects/pict_sekawanmedia.png"
 import {HiOutlineChevronDoubleUp} from "react-icons/hi"
 import Projectitem from "../components/Projectitem";
 
@@ -29,7 +31,21 @@ const ProjectAll = () => {
                     </p>
                     <h2 className="ml-2">What Ive Build</h2>
                     <div className="grid md:grid-cols-2 gap-8">
-                        {/* Search Movie  */}
+                        {/* Project FXMEDIA  */}
+                        <Projectitem
+                            title="Project FXMEDIA"
+                            backgroundImg={fxmediaIMG}
+                            descriptionText="HTML CSS JS BOOTSTRAP"
+                            projectUrl="/projectFXMEDIA"
+                        />
+                        {/* Project Sekawan Media */}
+                        <Projectitem
+                            title="Project Sekawan Media"
+                            backgroundImg={sekawanmediaIMG}
+                            descriptionText="HTML CSS Javascript JQuery"
+                            projectUrl="/projectSEKAWANMEDIA"
+                        />
+                        {/* Search Movie */}
                         <Projectitem
                             title="Search Movie API"
                             backgroundImg={searchMovieImg}
