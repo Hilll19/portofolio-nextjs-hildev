@@ -26,9 +26,9 @@ const Projects = () => {
           />
           {/* Rembang */}
           <Projectitem
-            title="Project Sekawan Media"
+            title="Project SekawanMedia"
             backgroundImg={sekawanmediaIMG}
-            descriptionText="HTML CSS Javascript JQuery"
+            descriptionText="HTML CSS JS JQuery"
             projectUrl="/projectSEKAWANMEDIA"
           />
           {/* Search Movie  */}
@@ -42,7 +42,7 @@ const Projects = () => {
           <Projectitem
             title="ChatApp Firebase"
             backgroundImg={chatappImg}
-            descriptionText="ReactJS CSS SCSS Firebase"
+            descriptionText="ReactJS SCSS Firebase"
             projectUrl="/ChatApp"
           />
         </div>
