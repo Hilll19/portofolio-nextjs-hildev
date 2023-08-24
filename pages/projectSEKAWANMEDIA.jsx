@@ -4,7 +4,7 @@ import sekawanmediaIMG from "@/public/assets/projects/pict_sekawanmedia.png"
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
-const ChatApp = () => {
+const projectSEKAWANMEDIA = () => {
   return (
     <div className='w-full '>
       <div className='w-screen lg:w-full h-[60vh] lg:h-[500px] relative'>
@@ -20,7 +20,7 @@ const ChatApp = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className='p-2'>
-            Project ini saya buat untuk test assestment fxmedia, disini saya diberikan sebuah intruksi untuk mengimplementasikan design yang ada di adobe illustrator ke dalam sebuah code dengan memakai bootstrap.
+            Project ini saya buat untuk test assestment Sekawan Media, disini saya diberikan sebuah intruksi untuk mengimplementasikan design yang ada di disebuah FIGMA ke dalam sebuah code dengan memakai CSS, JQuery.Ada navbar dan sudah responsive ketika versi mobile akan menjadi hamburger menu.Di furniture ada slider JQuery untuk zoom in dan zoom out gambar ketika di click, serta flip desktipsi.Lalu ada juga slider yang menggunakan tombol prev and next.
           </p>
           <Link href="https://radiant-salamander-14f39b.netlify.app/">
             <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
@@ -48,4 +48,4 @@ const ChatApp = () => {
   )
 }
 
-export default ChatApp
+export default projectSEKAWANMEDIA

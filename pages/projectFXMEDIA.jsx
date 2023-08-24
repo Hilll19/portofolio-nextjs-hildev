@@ -4,14 +4,14 @@ import fxmediaIMG from "@/public/assets/projects/pict_FXMEDIA.png"
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
-const ChatApp = () => {
+const projectFXMEDIA = () => {
   return (
     <div className='w-full '>
       <div className='w-screen lg:w-full h-[60vh] lg:h-[500px] relative'>
         <div className='absolute top-0 left-0 w-full h-[60vh] lg:h-[500px] bg-black/70 z-10' />
         <Image className='abosulte z-1' layout='fill' objectFit='cover' src={fxmediaIMG} alt='kopiemak' />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[50%] text-white z-10 p-2'>
-          <h2>Chatapp</h2>
+          <h2>Project FXMEDIA</h2>
           <h3>HTML / CSS / Javascript /Bootstrap</h3>
         </div>
       </div>
@@ -48,4 +48,4 @@ const ChatApp = () => {
   )
 }
 
-export default ChatApp
+export default projectFXMEDIA
