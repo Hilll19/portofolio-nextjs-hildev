@@ -43,7 +43,7 @@ const About = () => {
           </div>
         </div>
         <div className="xl:w-auto w-[200px] ml-[90px] h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 xl:ml-[527px]">
-          <Image src={hilImg} width="200" height="60" />
+          <Image src={hilImg} width="200" height="60" alt="my image" />
         </div>
       </div>
     </div>
