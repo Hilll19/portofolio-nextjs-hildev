@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import searchMovieImg from '@/public/assets/projects/searchmoviedb.png'
 import sekawanmediaIMG from "@/public/assets/projects/pict_sekawanmedia.png"
-import fxmediaIMG from "@/public/assets/projects/pict_FXMEDIA.png"
+import fxmediaIMG from "@/public/assets/projects/pict_fxmedia.png"
 import chatappImg from "@/public/assets/projects/ChatAppSs.png"
 import { CgMoreR } from "react-icons/cg"
 import Link from "next/link";

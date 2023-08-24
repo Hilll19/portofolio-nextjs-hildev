@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import fxmediaIMG from "@/public/assets/projects/pict_FXMEDIA.png"
+import fxmediaIMG from "@/public/assets/projects/pict_fxmedia.png"
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 

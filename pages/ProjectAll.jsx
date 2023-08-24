@@ -5,7 +5,7 @@ import projectallIMG from '@/public/assets/projects/projectall.png'
 import propertyImg from "@/public/assets/projects/kopiemak1.png";
 import rembangImg from "@/public/assets/projects/RembangTour1.png"
 import chatappImg from "@/public/assets/projects/ChatAppSs.png"
-import fxmediaIMG from "@/public/assets/projects/pict_FXMEDIA.png"
+import fxmediaIMG from "@/public/assets/projects/pict_fxmedia.png"
 import sekawanmediaIMG from "@/public/assets/projects/pict_sekawanmedia.png"
 import {HiOutlineChevronDoubleUp} from "react-icons/hi"
 import Projectitem from "../components/Projectitem";
