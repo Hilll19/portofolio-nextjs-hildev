@@ -19,14 +19,14 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Search Movie  */}
           <Projectitem
-            title="Project FXMEDIA"
+            title="FXMEDIA"
             backgroundImg={fxmediaIMG}
             descriptionText="HTML CSS JS BOOTSTRAP"
             projectUrl="/projectFXMEDIA"
           />
-          {/* Rembang */}
+          {/* Sekawan */}
           <Projectitem
-            title="Project SekawanMedia"
+            title="SekawanMedia"
             backgroundImg={sekawanmediaIMG}
             descriptionText="HTML CSS JS JQuery"
             projectUrl="/projectSEKAWANMEDIA"

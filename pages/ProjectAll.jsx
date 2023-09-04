@@ -7,6 +7,7 @@ import rembangImg from "@/public/assets/projects/RembangTour1.png"
 import chatappImg from "@/public/assets/projects/ChatAppSs.png"
 import fxmediaIMG from "@/public/assets/projects/pict_fxmedia.png"
 import sekawanmediaIMG from "@/public/assets/projects/pict_sekawanmedia.png"
+import pilijurusanIMG from "@/public/assets/projects/pilijurusan.png"
 import {HiOutlineChevronDoubleUp} from "react-icons/hi"
 import Projectitem from "../components/Projectitem";
 
@@ -30,17 +31,17 @@ const ProjectAll = () => {
                         Projects
                     </p>
                     <h2 className="ml-2">What Ive Build</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid md:grid-cols-3 gap-8">
                         {/* Project FXMEDIA  */}
                         <Projectitem
-                            title="Project FXMEDIA"
+                            title="FXMEDIA"
                             backgroundImg={fxmediaIMG}
                             descriptionText="HTML CSS JS BOOTSTRAP"
                             projectUrl="/projectFXMEDIA"
                         />
                         {/* Project Sekawan Media */}
                         <Projectitem
-                            title="Project Sekawan Media"
+                            title="SekawanMedia"
                             backgroundImg={sekawanmediaIMG}
                             descriptionText="HTML CSS Javascript JQuery"
                             projectUrl="/projectSEKAWANMEDIA"
@@ -58,6 +59,13 @@ const ProjectAll = () => {
                             backgroundImg={chatappImg}
                             descriptionText="ReactJS Firebase"
                             projectUrl="/ChatApp"
+                        />
+                        {/* Project Pili Jurusan */}
+                        <Projectitem
+                            title="Pili Jurusan"
+                            backgroundImg={pilijurusanIMG}
+                            descriptionText="HTML CSS JS API"
+                            projectUrl="/pilijurusan"
                         />
                         {/* KOPI EMAK */}
                         <Projectitem
